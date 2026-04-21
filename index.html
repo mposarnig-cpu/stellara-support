@@ -1,121 +1,75 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stellara – Support</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0d0b1a;
-      color: #e8e0f0;
-      min-height: 100vh;
-    }
-    header {
-      text-align: center;
-      padding: 60px 20px 40px;
-      border-bottom: 1px solid #2a2040;
-    }
-    header h1 {
-      font-size: 2rem;
-      color: #c49a6c;
-      letter-spacing: 4px;
-      margin-bottom: 8px;
-    }
-    header p {
-      color: #6b6080;
-      font-size: 0.95rem;
-    }
-    main {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 50px 24px;
-    }
-    section {
-      background: #1a1628;
-      border: 1px solid #2a2040;
-      border-radius: 12px;
-      padding: 28px;
-      margin-bottom: 20px;
-    }
-    section h2 {
-      font-size: 1rem;
-      color: #c49a6c;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 16px;
-    }
-    section p, section li {
-      color: #b0a8c0;
-      font-size: 0.95rem;
-      line-height: 1.7;
-    }
-    section ul {
-      padding-left: 20px;
-    }
-    section ul li {
-      margin-bottom: 8px;
-    }
-    a {
-      color: #c49a6c;
-      text-decoration: none;
-    }
-    a:hover { text-decoration: underline; }
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #3a3050;
-      font-size: 0.8rem;
-      border-top: 1px solid #2a2040;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stellara – Dein persönliches Horoskop</title>
+<meta name="description" content="Stellara – persönliche Horoskope, Affirmationen und astrologische Einsichten. Für iOS.">
+<style>
+  :root {
+    --bg: #13101e;
+    --fg: #f5f2ff;
+    --muted: #b5add1;
+    --accent: #d4b3ff;
+    --card: #1d1830;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); color: var(--fg); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; }
+  body { min-height: 100vh; display: flex; flex-direction: column; }
+  header { padding: 2rem 1.5rem; text-align: center; }
+  .logo { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em; background: linear-gradient(135deg, #d4b3ff 0%, #8a7bc8 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  main { flex: 1; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem 4rem; width: 100%; }
+  .hero { text-align: center; padding: 2rem 0 3rem; }
+  .hero h1 { font-size: 2rem; margin-bottom: 1rem; font-weight: 600; }
+  .hero p { color: var(--muted); font-size: 1.1rem; max-width: 520px; margin: 0 auto; }
+  .links { display: grid; gap: 1rem; margin-top: 2rem; }
+  .card { background: var(--card); border-radius: 14px; padding: 1.25rem 1.5rem; text-decoration: none; color: var(--fg); border: 1px solid rgba(255,255,255,0.06); transition: border-color .2s, transform .2s; }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card strong { display: block; font-size: 1.05rem; margin-bottom: 0.25rem; }
+  .card span { color: var(--muted); font-size: 0.95rem; }
+  footer { padding: 2rem 1.5rem; text-align: center; color: var(--muted); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.06); }
+  footer a { color: var(--muted); margin: 0 0.5rem; text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  .lang { text-align: center; margin-top: 1.5rem; }
+  .lang a { color: var(--muted); text-decoration: none; font-size: 0.9rem; padding: 0 0.5rem; }
+  .lang a:hover { color: var(--accent); }
+</style>
 </head>
 <body>
-
 <header>
-  <h1>✦ STELLARA</h1>
-  <p>Align your ambition. – Support</p>
+  <div class="logo">Stellara</div>
 </header>
-
 <main>
-
-  <section>
-    <h2>Kontakt</h2>
-    <p>Bei Fragen, Problemen oder Feedback erreichst du uns per E-Mail:</p>
-    <br>
-    <p><a href="mailto:mposarnig@gmail.com">mposarnig@gmail.com</a></p>
-    <br>
-    <p>Wir antworten in der Regel innerhalb von 1–2 Werktagen.</p>
+  <section class="hero">
+    <h1>Dein persönliches Horoskop</h1>
+    <p>Tägliche Horoskope, Affirmationen und astrologische Einsichten – individuell auf dich abgestimmt.</p>
   </section>
-
-  <section>
-    <h2>Häufige Fragen</h2>
-    <ul>
-      <li><strong>Wie ändere ich mein Profil?</strong><br>
-      Tippe in der App unten auf das Einstellungs-Symbol und wähle „Profil bearbeiten". Änderungen werden ab dem nächsten Tag berücksichtigt.</li>
-      <br>
-      <li><strong>Wie kündige ich mein Abo?</strong><br>
-      Abos können jederzeit über die iPhone-Einstellungen → Apple ID → Abonnements gekündigt werden.</li>
-      <br>
-      <li><strong>Mein Kauf wurde nicht erkannt.</strong><br>
-      Tippe in den Einstellungen auf „Käufe wiederherstellen". Falls das Problem weiterhin besteht, kontaktiere uns per E-Mail.</li>
-      <br>
-      <li><strong>Wie werden meine Daten verwendet?</strong><br>
-      Stellara speichert dein Profil ausschließlich lokal auf deinem Gerät. Es werden keine persönlichen Daten an Dritte weitergegeben.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Datenschutz</h2>
-    <p>Stellara erfasst keine personenbezogenen Daten und gibt keine Nutzerdaten an Dritte weiter. Die App verwendet ausschließlich anonymisierte Anfragen an KI-Dienste zur Generierung von Horoskopinhalten. Dein Profil (Name, Geburtsdatum, Branche) wird nur lokal auf deinem Gerät gespeichert.</p>
-  </section>
-
+  <nav class="links">
+    <a class="card" href="privacy-de.html">
+      <strong>Datenschutzerklärung</strong>
+      <span>Wie wir mit deinen Daten umgehen</span>
+    </a>
+    <a class="card" href="privacy-en.html">
+      <strong>Privacy Policy</strong>
+      <span>How we handle your data</span>
+    </a>
+    <a class="card" href="support.html">
+      <strong>Support</strong>
+      <span>Hilfe und Kontakt</span>
+    </a>
+  </nav>
+  <div class="lang">
+    <a href="#" onclick="document.documentElement.lang='de';return false;">Deutsch</a> ·
+    <a href="#" onclick="document.documentElement.lang='en';return false;">English</a>
+  </div>
 </main>
-
 <footer>
-  <p>© 2026 Martin Posarnig · Stellara · <a href="https://www.mpmarketing.at">mpmarketing.at</a></p>
+  <div>© 2026 Martin Posarnig</div>
+  <div style="margin-top:0.5rem;">
+    <a href="privacy-de.html">Datenschutz</a> ·
+    <a href="privacy-en.html">Privacy</a> ·
+    <a href="support.html">Support</a>
+  </div>
 </footer>
-
 </body>
 </html>
